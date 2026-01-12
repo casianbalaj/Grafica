@@ -36,7 +36,7 @@ namespace Grafica_3
             string imagePath = @"../../../lion.png";
             if (!File.Exists(imagePath))
             {
-                MessageBox.Show("Image file 'lion.png' not found. Please add it to the project root.", "Missing Image", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Image file 'lion.png' not found.", "Missing Image", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             Image src = Image.FromFile(imagePath);
